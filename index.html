@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aark Bharti | Student Portfolio (Lab 2)</title>
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="main-header">
+        <nav>
+            <div class="logo">Aark Bharti</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <!-- Profile Image -->
+        <img src="profile.jpg" alt="Aark Bharti Profile" class="profile-pic">
+        
+        <h1>Hi, I'm Aark Bharti</h1>
+        <h2>1st Year B.Tech CSE Student</h2>
+        <p>Welcome to my personal portfolio. I am learning Full Stack Development.</p>
+        
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- Visual Separator -->
+    <hr>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="content-section">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a passionate technology student focused on creating user-friendly websites. 
+            I combine strong computational thinking with web development skills. 
+            Currently, I am focusing on C++, Python, and Web Technologies.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SKILLS SECTION (Table Requirement for Lab 2) -->
+    <section id="skills" class="content-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <p>Here is an overview of my technical competencies:</p>
+        
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Languages / Tools</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Core Programming</td>
+                    <td>C, C++</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML5, CSS3, JavaScript</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Scripting</td>
+                    <td>Python</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td>Git, GitHub, Figma</td>
+                    <td>Intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="content-section">
+        <h2 class="section-title">Academic Projects</h2>
+        
+        <div class="project-box">
+            <h3>Hospital Booking System</h3>
+            <p><strong>Type:</strong> Computational Thinking</p>
+            <p>A logic-based application to manage patient slots and doctor appointments using C++ logic.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Personal Portfolio</h3>
+            <p><strong>Type:</strong> Web Development</p>
+            <p>This website! A static portfolio site created using HTML and external CSS styling.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Smart Task Manager</h3>
+            <p><strong>Type:</strong> JavaScript</p>
+            <p>A simple To-Do list application to manage daily tasks efficiently.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section">
+        <h2 class="section-title">Get in Touch</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Aark Bharti. All Rights Reserved.</p>
+        <p>
+            <a href="https://github.com/aarkbharti" target="_blank">My GitHub Profile</a>
+        </p>
+    </footer>
+
+    <!-- POSITIONING REQUIREMENT: Fixed Back to Top Button -->
+    <a href="#home" class="back-to-top">↑ Top</a>
+
+</body>
+</html>

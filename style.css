@@ -1,0 +1,218 @@
+/* --- GLOBAL STYLES & GOOGLE FONTS --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light Grey Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION STYLING --- */
+.main-header {
+    background-color: #2c3e50; /* Dark Blue Theme */
+    padding: 20px 0;
+    text-align: center;
+    /* Sticky Header using Positioning */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling <li> to be inline (No Flexbox allowed in Lab 2 usually) */
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Formatted <a> links */
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Gold Hover Effect */
+    border-bottom: 2px solid #f39c12;
+}
+
+/* --- SECTIONS & BOX MODEL --- */
+.content-section, .hero-section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto; /* Centering block elements */
+    text-align: center;
+}
+
+.section-title {
+    color: #2c3e50;
+    border-bottom: 3px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+/* Visual Separator <hr> styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Image Styling */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular image */
+    border: 5px solid #2c3e50;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+/* --- BUTTONS --- */
+.btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1abc9c; /* Green on hover */
+}
+
+/* --- SKILLS TABLE STYLING --- */
+.skills-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.skills-table th {
+    background-color: #2c3e50;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Alternating Row Colors */
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.skills-table tr:hover {
+    background-color: #e1f5fe;
+}
+
+/* --- PROJECT BOXES --- */
+.project-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* --- CONTACT FORM --- */
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Box Model adjustment */
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+/* --- POSITIONING REQUIREMENT (Back to Top) --- */
+.back-to-top {
+    position: fixed; /* Fixed positioning */
+    bottom: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background-color: #c0392b;
+}
